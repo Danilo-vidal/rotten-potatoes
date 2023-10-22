@@ -63,7 +63,7 @@ def single(oid):
         filme.save()
         return redirect(url_for('single', oid=oid))
 
-@app.route('/host')
+@app.route('/host')i
 def host():
     return jsonify({"host": os.uname().nodename})
 
